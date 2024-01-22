@@ -1675,7 +1675,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ea08606f36fc44d9b86caf89a57c53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 3
+  jumpPower: 5
+  audioRun: {fileID: 0}
+  audioJump: {fileID: 0}
+  audioItem: {fileID: 0}
+  audioDie: {fileID: 0}
+  audioFinish: {fileID: 0}
+  audioLanding: {fileID: 0}
 --- !u!1 &2094134632
 GameObject:
   m_ObjectHideFlags: 0

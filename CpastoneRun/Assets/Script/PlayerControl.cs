@@ -6,6 +6,8 @@ public class PlayerControl : MonoBehaviour
 {
     public float jumpPower;
     bool isJump;
+    bool isDoubleJump;
+
     public AudioClip audioRun;
     public AudioClip audioJump;
     public AudioClip audioItem;
@@ -32,6 +34,12 @@ public class PlayerControl : MonoBehaviour
             myRigid.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
             PlaySound("JUMP");
         }
+        // DoubleJump
+        if(Input.GetButtonDown("Jump") && isJump && !isDoubleJump){
+            isDoubleJump = true;
+            myRigid.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
+            PlaySound("JUMP");
+        }
     }
 
     void FixedUpdate(){
@@ -44,10 +52,13 @@ public class PlayerControl : MonoBehaviour
 
     void OnCollisionEnter(Collision collision){
         // 땅에 닿아 있는지(여기선 Plane)
-        if(collision.gameObject.name == "Plane")
+        if(collision.gameObject.name == "Plane"){
             isJump = false;
+            isDoubleJump = false;
+        }
     }
 
+    // PlayerBoard
     void PlaySound(string action){
         switch(action){
             case "JUMP":
