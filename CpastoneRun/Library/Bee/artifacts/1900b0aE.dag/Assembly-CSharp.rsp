@@ -361,6 +361,7 @@
 "Assets/Script/GameManager.cs"
 "Assets/Script/Ground_loop.cs"
 "Assets/Script/Ground_scrolling.cs"
+"Assets/Script/Ground_upDown.cs"
 "Assets/Script/Item.cs"
 "Assets/Script/MainMenu.cs"
 -langversion:9.0
