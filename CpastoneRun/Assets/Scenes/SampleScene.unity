@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 44221657}
   - component: {fileID: 44221656}
   - component: {fileID: 44221660}
+  - component: {fileID: 44221661}
   m_Layer: 0
   m_Name: Ground_center
   m_TagString: Untagged
@@ -242,6 +243,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &44221661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44221655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d25bd003a10c4145870347a59ca766a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &338854294
 GameObject:
   m_ObjectHideFlags: 0
