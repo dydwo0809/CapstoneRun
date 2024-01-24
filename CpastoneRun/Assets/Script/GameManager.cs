@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
     public float score { get; set; } = 0;
+    public bool isGameover = false;
 
     private void Awake()
     {
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void addScore(float added)
+    public void addItemScore(float added)
     {
         score += added;
     }

@@ -361,6 +361,7 @@
 "Assets/Script/GameManager.cs"
 "Assets/Script/Item.cs"
 "Assets/Script/MainMenu.cs"
+"Assets/Script/ScoreText.cs"
 -langversion:9.0
 
 /deterministic

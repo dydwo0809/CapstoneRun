@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 561345551}
   - component: {fileID: 561345550}
   - component: {fileID: 561345554}
+  - component: {fileID: 561345555}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -226,7 +227,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -309,6 +310,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b18b2f1be49a63419c3d6e4990a8bef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &561345555
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561345548}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +669,7 @@ GameObject:
   - component: {fileID: 1553412219}
   - component: {fileID: 1553412218}
   - component: {fileID: 1553412220}
+  - component: {fileID: 1553412221}
   m_Layer: 5
   m_Name: scoreText
   m_TagString: Untagged
@@ -780,6 +809,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &1553412221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553412216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffbc109f369b2e348a7adb6535bd62ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1553412218}
 --- !u!1 &1834808801
 GameObject:
   m_ObjectHideFlags: 0

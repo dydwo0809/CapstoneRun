@@ -11,10 +11,12 @@ public class Item : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnTriggrEnter(Collider other)
     {
-        GameManager.Instance.addScore(0.1f);
-        float score = GameManager.Instance.score;
-        Debug.Log(score);
+        if(other.tag == "Player")
+        {
+            GameManager.Instance.addItemScore(5f);
+            Destroy(gameObject);
+        }
     }
 }
