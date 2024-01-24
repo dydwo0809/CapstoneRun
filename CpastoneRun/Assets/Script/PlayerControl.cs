@@ -56,23 +56,24 @@ public class PlayerControl : MonoBehaviour
         anim.SetFloat ("Speed", v);						
 		anim.SetFloat ("Direction", h);
         
-        velocity = new Vector3 (h, 0, v);		
+        velocity = new Vector3 (h, 0, 0);		
 			
 		velocity = transform.TransformDirection (velocity);
-        if (v > 0.1) {
+        if (h > 0.1) {
             velocity *= runSpeed;
-        } else if (v < -0.1) {
+        } else if (h < -0.1) {
             velocity *= runSpeed;
         }
 
-        if (Input.GetButtonDown ("Jump")) {            
-            if (currentBaseState.nameHash == locoState) {
-                if (!anim.IsInTransition (0)) {
-                    myRigid.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
-                    anim.SetBool ("Jump", true);
-                }
-            }
-        }
+        // if (Input.GetButtonDown ("Jump")) {            
+        //     if (currentBaseState.nameHash == locoState) {
+        //         if (!anim.IsInTransition (0)) {
+        //             myRigid.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
+        //             anim.SetBool ("Jump", true);
+        //         }
+        //     }
+        // }
+        
     }
 
     void OnCollisionEnter(Collision collision){
