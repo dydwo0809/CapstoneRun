@@ -57,11 +57,11 @@ public class Controler : MonoBehaviour
         // 방향키 입력 시 방향 변환, 기본 방향은 앞
         if(Input.GetButton("Horizontal")){
             transform.LookAt(transform.position + moveVec + Vector3.forward);
-            PlaySound("Run");
+            //PlaySound("Run");
         }
         else {
             transform.LookAt(transform.position + Vector3.forward);
-            PlaySound("Run");
+            //PlaySound("Run");
         }
 
         if(Input.GetKeyDown("i")){
@@ -75,7 +75,7 @@ public class Controler : MonoBehaviour
         if(collision.contacts[0].normal.y > 0.7f){
             jumpCount = 0; 
             anim.SetBool("Jump", false);
-            PlaySound("LANDING");
+            //PlaySound("LANDING");
         }
     }
 
