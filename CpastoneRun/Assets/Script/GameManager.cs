@@ -22,8 +22,9 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
+    public float score{ get; set; } = 0;
+    public bool isGameover = false;
 
-    public float score { get; set; } = 0;
 
     private void Awake()
     {
@@ -35,11 +36,9 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        // 아래의 함수를 사용하여 씬이 전환되더라도 선언되었던 인스턴스가 파괴되지 않는다.
-        DontDestroyOnLoad(gameObject);
     }
 
-    public void addScore(float added)
+    public void addItemScore(float added)
     {
         score += added;
     }
