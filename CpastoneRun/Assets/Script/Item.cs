@@ -15,6 +15,6 @@ public class Item : MonoBehaviour
     {
         GameManager.Instance.addScore(0.1f);
         float score = GameManager.Instance.score;
-        Debug.Log(score);
+        //Debug.Log(score);
     }
 }
