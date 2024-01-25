@@ -34,6 +34,12 @@ public class EscapeMenu : MonoBehaviour
         Time.timeScale = 1f;
         IsPaused = false;
     }
+    public void OnClickedResume()
+    {
+        escapeMenu.SetActive(false);
+        Time.timeScale = 1f;
+        IsPaused = false;
+    }
 
     public void OnClickedMainMenu()
     {
