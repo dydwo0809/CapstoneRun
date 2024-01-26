@@ -24,6 +24,7 @@ public class Platform : MonoBehaviour
     private void OnEnable()
     {
         //오브젝트가 다시 활성화 되면
+        Debug.Log("activated");
 
         stepped = false; //밟힘 상태 리셋
 
