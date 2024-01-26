@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
-    public float score{ get; set; } = 0;
+    public float score { get; set; } = 0;
+    public int level { get; set; } = 1;
     public bool isGameover = false;
 
 
@@ -43,5 +44,11 @@ public class GameManager : MonoBehaviour
     {
         score += added;
     }
-}
 
+    public void init()
+    {
+        score = 0;
+        level = 1;
+        isGameover = false;
+    }
+}
