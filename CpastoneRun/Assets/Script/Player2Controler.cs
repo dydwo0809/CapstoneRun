@@ -4,11 +4,11 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Controler : MonoBehaviour
+public class Player2Controler : MonoBehaviour
 {
     public  float runSpeed;
     public float jumpPower;
-    public float gravityPower;
+    public float gravityPower2;
     int jumpCount = 0;
 
     Vector3 moveVec;
@@ -35,7 +35,7 @@ public class Controler : MonoBehaviour
     void Update()
     {
         // Jump and Double Jump
-        if(Input.GetButtonDown("Jump") && jumpCount < 2){
+        if(Input.GetButtonDown("Fire3") && jumpCount < 2){
             jumpCount++;
             anim.SetBool ("Jump", true);
             myRigid.velocity = Vector3.zero;
@@ -46,7 +46,12 @@ public class Controler : MonoBehaviour
 
     void FixedUpdate(){
         // Control
-        float h = Input.GetAxisRaw("Horizontal");
+        float h = 0;
+        // h = Input.GetKey(KeyCode.D) ? 1 : 0;
+        // h = Input.GetKey(KeyCode.A) ? -1 : 0;
+        if(Input.GetKey(KeyCode.D)) h = 1;
+        else if(Input.GetKey(KeyCode.A)) h = -1;
+        else h = 0;
 
         anim.SetFloat ("Speed", h);
         
@@ -56,7 +61,7 @@ public class Controler : MonoBehaviour
         transform.position += moveVec * runSpeed * Time.deltaTime;
 
         // 방향키 입력 시 방향 변환, 기본 방향은 앞
-        if(Input.GetButton("Horizontal")){
+        if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A)){
             transform.LookAt(transform.position + moveVec + Vector3.forward);
             //PlaySound("Run");
         }
@@ -65,8 +70,8 @@ public class Controler : MonoBehaviour
             //PlaySound("Run");
         }
 
-        if(Input.GetKeyDown("b")){
-            myRigid.AddForce(Vector3.down * gravityPower);
+        if(Input.GetButtonDown("Fire1")){
+            myRigid.AddForce(Vector3.down * gravityPower2);
         }
     }
 

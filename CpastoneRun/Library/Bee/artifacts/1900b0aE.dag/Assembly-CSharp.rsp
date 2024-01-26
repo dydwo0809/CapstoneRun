@@ -366,6 +366,7 @@
 "Assets/Script/Platform.cs"
 "Assets/Script/PlatformScrolling.cs"
 "Assets/Script/PlatformSqawner.cs"
+"Assets/Script/Player2Controler.cs"
 "Assets/Script/PlayerControl.cs"
 "Assets/Script/ScoreText.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
