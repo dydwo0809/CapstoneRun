@@ -8,6 +8,7 @@ public class Controler : MonoBehaviour
 {
     public  float runSpeed;
     public float jumpPower;
+    public float gravityPower;
     int jumpCount = 0;
 
     Vector3 moveVec;
@@ -64,9 +65,8 @@ public class Controler : MonoBehaviour
             //PlaySound("Run");
         }
 
-        if(Input.GetKeyDown("i")){
-            audioSource.Play();
-            Debug.Log("i");
+        if(Input.GetKeyDown("b")){
+            myRigid.AddForce(Vector3.down * gravityPower);
         }
     }
 
