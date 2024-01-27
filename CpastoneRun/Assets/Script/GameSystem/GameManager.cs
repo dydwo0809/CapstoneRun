@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     }
     public float score { get; set; } = 0;
     public int level { get; set; } = 1;
+    public float[] rankingBoard = {0,0,0};
     public bool isGameover = false;
 
 
