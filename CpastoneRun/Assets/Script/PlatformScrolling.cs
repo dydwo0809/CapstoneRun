@@ -19,6 +19,5 @@ public class PlatformScrolling : MonoBehaviour
         {
             transform.Translate(Vector3.back * platformScrollingSpeed * Time.deltaTime);
         }
-
     }
 }

@@ -368,6 +368,7 @@
 "Assets/Script/PlatformSqawner.cs"
 "Assets/Script/PlayerControl.cs"
 "Assets/Script/ScoreText.cs"
+"Assets/Script/Start_Platform.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/CameraController.cs"
 "Assets/unity-chan!/Unity-chan! Model/Scripts/FaceUpdate.cs"
