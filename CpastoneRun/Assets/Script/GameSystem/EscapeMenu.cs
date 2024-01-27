@@ -31,6 +31,7 @@ public class EscapeMenu : MonoBehaviour
     public void OnClickedNewGame()
     {
         SceneManager.LoadScene("SampleScene");
+        GameManager.Instance.init();
         Time.timeScale = 1f;
         IsPaused = false;
     }
@@ -44,6 +45,7 @@ public class EscapeMenu : MonoBehaviour
     public void OnClickedMainMenu()
     {
         SceneManager.LoadScene("MainScene");
+        GameManager.Instance.init();
         Time.timeScale = 1f;
         IsPaused = false;
     }
