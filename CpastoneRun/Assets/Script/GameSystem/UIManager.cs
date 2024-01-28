@@ -27,7 +27,7 @@ public class UIManager : MonoBehaviour
         }
 
         // 인게임 esc 클릭시 메뉴창 on/off 기능
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (gameOverMenu.activeSelf == false && Input.GetKeyDown(KeyCode.Escape))
         {
             if (IsPaused == false)
             {
