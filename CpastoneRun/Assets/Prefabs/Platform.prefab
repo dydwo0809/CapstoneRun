@@ -258,10 +258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05590fb0991b4815b88f8fc5e32bb4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubes:
+  platforms:
   - {fileID: 6409432196685764518}
   - {fileID: 2587893433839490887}
   - {fileID: 3686734407235635533}
+  items: []
 --- !u!114 &3763008453727570113
 MonoBehaviour:
   m_ObjectHideFlags: 0

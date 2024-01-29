@@ -4,29 +4,25 @@ using UnityEngine;
 
 public class PlatformSqawner : MonoBehaviour
 {
+    public GameObject platformPrefab; // 생성할 발판의 원본 프리팹
+    public int count = 16; // 생성할 발판의 개수 == 길이 4개 이상으로 해야합니다 
 
-    public GameObject[] platforms; // 미리 생성돼있는 플랫폼들
+    private GameObject[] platforms; // 미리 생성돼있는 플랫폼들
 
-    private int currentPlatformIdx=0;
-
-    private Vector3 poolPosition = new Vector3(-20, 0, -10); //pool의 위치
+    private int currentPlatformIdx=0; // 현재 사용할 순서의 발
 
     void Start()
     {
-        //사용할 현재 순번의 발판 게임오브젝트 활성화 -> OnEnable메서드가 실행됨(군데군데 랜덤 생3)
-        platforms[currentPlatformIdx].SetActive(true);
+        // 변수들을 초기화하고 사용할 발판들을 미리 생성
 
-        //현재 순번의 발판을 화면 재배치
-        platforms[currentPlatformIdx].transform.position = new Vector3(0, 0, 6);
+        //count 만큼의 공간을 가지는 새로운 발판 배열 생
+        platforms = new GameObject[count];
 
-        currentPlatformIdx++;
-
-        if (currentPlatformIdx >= platforms.Length)
+        // count 만큼 루프하면서 발판 생성
+        for (int i = 0; i < count; i++)
         {
-            currentPlatformIdx = 0;
+            platforms[i] = Instantiate(platformPrefab, new Vector3(0,0,6 * (i-3)), Quaternion.identity);
         }
-
-        transform.position = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -38,28 +34,22 @@ public class PlatformSqawner : MonoBehaviour
             return;
         }
 
+        // 마지막 배치 시점에서 timeBetSpawn이상 시간이 흘렀다면
         if (transform.position.z <= -6)
         {
-            //이전꺼는 disable
-            if (currentPlatformIdx != 0)
-            {
-                platforms[currentPlatformIdx - 1].SetActive(true);
-                Debug.Log(currentPlatformIdx + ": disabled");
-            }
-
-            //사용할 현재 순번의 발판 게임오브젝트 활성화 -> OnEnable메서드가 실행됨(군데군데 랜덤 생성)
+            //사용할 현재 순번의 발판 게임오브젝트를 비활성화하고 즉시 다시 활성화 -> OnEnable메서드가 실행됨
+            platforms[currentPlatformIdx].SetActive(false);
             platforms[currentPlatformIdx].SetActive(true);
 
-            //현재 순번의 발판을 화면 재배치
-            platforms[currentPlatformIdx].transform.position = new Vector3(0,0,12);
+            //현재 순번의 발판 재배치
+            platforms[currentPlatformIdx].transform.position = new Vector3(0,0,6*(count-3));
 
             currentPlatformIdx++;
 
-            if (currentPlatformIdx >= platforms.Length)
+            if (currentPlatformIdx >= count)
             {
                 currentPlatformIdx = 0;
             }
-
             transform.position = new Vector3(0, 0, 0);
         }
 
