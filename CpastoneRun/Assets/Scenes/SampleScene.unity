@@ -1473,6 +1473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: uniChan2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7765386478475758042, guid: 52839f081dabf5244b7cccea90739f9d, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
     - target: {fileID: 7765386478475859450, guid: 52839f081dabf5244b7cccea90739f9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
