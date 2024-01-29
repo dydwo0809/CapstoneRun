@@ -17,14 +17,7 @@ public class PlatformScrolling : MonoBehaviour
         //게임이 안끝났을때만 이동
         if (!GameManager.Instance.isGameover)
         {
-            if(transform.position.z <= -12)
-            {
-                gameObject.SetActive(false);
-                gameObject.SetActive(true);
-                transform.position = new Vector3(0, 0, 60);
-            }
             transform.Translate(Vector3.back * platformScrollingSpeed * Time.deltaTime);
-
         }
 
     }
