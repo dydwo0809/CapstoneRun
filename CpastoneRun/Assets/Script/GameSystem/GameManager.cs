@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     }
     public float score { get; set; } = 0;
     public int level { get; set; } = 1;
-    public float[] rankingBoard = new float[3];
+    public float[] rankingBoard = {0,0,0};
     public bool isGameover = false;
 
 
@@ -39,10 +39,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-
-        rankingBoard[0] = PlayerPrefs.GetFloat("Third", 0);
-        rankingBoard[1] = PlayerPrefs.GetFloat("Second", 0);
-        rankingBoard[2] = PlayerPrefs.GetFloat("First", 0);
     }
 
     public void addItemScore(float added)

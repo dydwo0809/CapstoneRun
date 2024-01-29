@@ -11,9 +11,9 @@ public class RankingBoard : MonoBehaviour
     public TextMeshProUGUI thirdText;
     void Start()
     {
-        firstText.text = "1. " + (int)PlayerPrefs.GetFloat("First", 0);
-        secondText.text = "2. " + (int)PlayerPrefs.GetFloat("Second", 0);
-        thirdText.text = "3. " + (int)PlayerPrefs.GetFloat("Third", 0);
+        firstText.text = "1. " + (int)PlayerPrefs.GetFloat("First");
+        secondText.text = "2. " + (int)PlayerPrefs.GetFloat("Second");
+        thirdText.text = "3. " + (int)PlayerPrefs.GetFloat("Third");
     }
     public void OnClickedBackToMainMenu()
     {
