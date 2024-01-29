@@ -397,6 +397,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2420427720850199746}
     m_Modifications:
+    - target: {fileID: 924470798887296323, guid: 4e6a471ac88d342d4b9d6387d29d5c4f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242738367262291378, guid: 4e6a471ac88d342d4b9d6387d29d5c4f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2250496369792493557, guid: 4e6a471ac88d342d4b9d6387d29d5c4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -443,6 +451,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5446997614015141054, guid: 4e6a471ac88d342d4b9d6387d29d5c4f, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047360973832585316, guid: 4e6a471ac88d342d4b9d6387d29d5c4f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414145361408135200, guid: 4e6a471ac88d342d4b9d6387d29d5c4f, type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9180608108019114593, guid: 4e6a471ac88d342d4b9d6387d29d5c4f, type: 3}
@@ -507,6 +523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3532858103267695545}
     m_Modifications:
+    - target: {fileID: 2673358574269501499, guid: 57acbcfdf0d11464586633a40b0f0acf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2822000340834717574, guid: 57acbcfdf0d11464586633a40b0f0acf, type: 3}
       propertyPath: m_Name
       value: AddScoreItem (2)
@@ -586,6 +606,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3532858103267695545}
     m_Modifications:
+    - target: {fileID: 2673358574269501499, guid: 57acbcfdf0d11464586633a40b0f0acf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2822000340834717574, guid: 57acbcfdf0d11464586633a40b0f0acf, type: 3}
       propertyPath: m_Name
       value: AddScoreItem (1)
