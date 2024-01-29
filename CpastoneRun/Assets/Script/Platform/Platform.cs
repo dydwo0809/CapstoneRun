@@ -14,11 +14,6 @@ public class Platform : MonoBehaviour
 
     void Update()
     {
-        //플랫폼이 화면 밖으로 나가면 비활성화 
-        if (transform.position.z < -10)
-        {
-            gameObject.SetActive(false);
-        }
     }
 
     private void OnEnable()
