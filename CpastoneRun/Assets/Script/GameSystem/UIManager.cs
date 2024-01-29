@@ -74,7 +74,6 @@ public class UIManager : MonoBehaviour
             }
 
             GameManager.Instance.init();
-
         }
     }
 
