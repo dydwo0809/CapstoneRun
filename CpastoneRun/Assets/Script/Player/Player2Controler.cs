@@ -30,12 +30,13 @@ public class Player2Controler : MonoBehaviour
         myRigid = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator> ();
+        Physics.gravity = Vector3.down * 17f;
     }
 
     void Update()
     {
         // Jump and Double Jump
-        if(Input.GetButtonDown("Fire3") && jumpCount < 2){
+        if(Input.GetKeyDown(KeyCode.W) && jumpCount < 2){
             jumpCount++;
             anim.SetBool ("Jump", true);
             myRigid.velocity = Vector3.zero;
@@ -47,8 +48,6 @@ public class Player2Controler : MonoBehaviour
     void FixedUpdate(){
         // Control
         float h = 0;
-        // h = Input.GetKey(KeyCode.D) ? 1 : 0;
-        // h = Input.GetKey(KeyCode.A) ? -1 : 0;
         if(Input.GetKey(KeyCode.D)) h = 1;
         else if(Input.GetKey(KeyCode.A)) h = -1;
         else h = 0;
@@ -70,7 +69,7 @@ public class Player2Controler : MonoBehaviour
             //PlaySound("Run");
         }
 
-        if(Input.GetButtonDown("Fire1")){
+        if(Input.GetKeyDown(KeyCode.S)){
             myRigid.AddForce(Vector3.down * gravityPower2);
         }
     }

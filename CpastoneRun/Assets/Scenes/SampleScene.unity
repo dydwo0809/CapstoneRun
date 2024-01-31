@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -423,6 +423,22 @@ PrefabInstance:
     - target: {fileID: 5543754538359330242, guid: e523949a9779f2241a8267d2b4d16763, type: 3}
       propertyPath: m_Name
       value: uniChan
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543754538359330242, guid: e523949a9779f2241a8267d2b4d16763, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330436985824011898, guid: e523949a9779f2241a8267d2b4d16763, type: 3}
+      propertyPath: jumpPower
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330436985824011898, guid: e523949a9779f2241a8267d2b4d16763, type: 3}
+      propertyPath: forceGravity
+      value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330436985824011898, guid: e523949a9779f2241a8267d2b4d16763, type: 3}
+      propertyPath: gravityPower
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1357,13 +1373,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6505384538318482550, guid: 52839f081dabf5244b7cccea90739f9d, type: 3}
+      propertyPath: jumpPower
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7765386478475758042, guid: 52839f081dabf5244b7cccea90739f9d, type: 3}
       propertyPath: m_Name
       value: uniChan2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7765386478475758042, guid: 52839f081dabf5244b7cccea90739f9d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7765386478475859450, guid: 52839f081dabf5244b7cccea90739f9d, type: 3}
       propertyPath: m_LocalPosition.x
