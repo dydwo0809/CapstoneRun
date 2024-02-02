@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 2673358574269501499}
   - component: {fileID: 7201325960210811017}
   - component: {fileID: 1310671444892823305}
-  - component: {fileID: 6178464572997690187}
+  - component: {fileID: 6948962948806106852}
+  - component: {fileID: 7654180514408736515}
   m_Layer: 0
   m_Name: AddScoreItem
   m_TagString: AddScoreItem
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2822000340834717574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102,7 +103,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -118,7 +119,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf639b17b7d29304f8b4f7e22b3b2abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6178464572997690187
+--- !u!114 &6948962948806106852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,3 +161,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformScrollingSpeed: 10
+--- !u!114 &7654180514408736515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822000340834717574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b18b2f1be49a63419c3d6e4990a8bef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
