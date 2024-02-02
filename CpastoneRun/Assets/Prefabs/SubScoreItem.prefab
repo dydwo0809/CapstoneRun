@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 252092046099647480}
   - component: {fileID: 9044406392332965206}
   - component: {fileID: 3793232425528409836}
+  - component: {fileID: 9027156382917505812}
   m_Layer: 0
   m_Name: SubScoreItem
   m_TagString: SubScoreItem
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 8906400873236357626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,3 +147,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2094819f52c4de949a54f514a9c066ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9027156382917505812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906400873236357626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980d90f6816024914a2c5193059ee2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformScrollingSpeed: 10

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2673358574269501499}
   - component: {fileID: 7201325960210811017}
   - component: {fileID: 1310671444892823305}
+  - component: {fileID: 6178464572997690187}
   m_Layer: 0
   m_Name: AddScoreItem
   m_TagString: AddScoreItem
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 2822000340834717574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,3 +147,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf639b17b7d29304f8b4f7e22b3b2abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6178464572997690187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822000340834717574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980d90f6816024914a2c5193059ee2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformScrollingSpeed: 10
