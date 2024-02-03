@@ -10,7 +10,6 @@ public class Controler : MonoBehaviour
     public float jumpPower;
     public float gravityPower;
     int jumpCount = 0;
-    public float forceGravity;
 
     Vector3 moveVec;
 
@@ -35,9 +34,8 @@ public class Controler : MonoBehaviour
 
     void Update()
     {
-        Physics.gravity = new Vector3(0, -forceGravity, 0);
         // Jump and Double Jump
-        if(Input.GetKeyDown(KeyCode.UpArrow) && jumpCount < 2){
+        if(Input.GetButtonDown("Jump") && jumpCount < 2){
             jumpCount++;
             anim.SetBool ("Jump", true);
             myRigid.velocity = Vector3.zero;
@@ -67,7 +65,7 @@ public class Controler : MonoBehaviour
             //PlaySound("Run");
         }
 
-        if(Input.GetKeyDown(KeyCode.DownArrow)){
+        if(Input.GetKeyDown("b")){
             myRigid.AddForce(Vector3.down * gravityPower);
         }
     }
