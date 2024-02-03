@@ -1145,6 +1145,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6330436985824011898, guid: e523949a9779f2241a8267d2b4d16763, type: 3}
+      propertyPath: jumpPower
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330436985824011898, guid: e523949a9779f2241a8267d2b4d16763, type: 3}
+      propertyPath: gravityPower
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

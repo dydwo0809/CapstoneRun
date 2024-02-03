@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public float[] rankingBoard = new float[3];
     public bool isGameover = false;
 
+    public float forceGravity = 25f;
 
     private void Awake()
     {
@@ -43,6 +44,8 @@ public class GameManager : MonoBehaviour
         rankingBoard[0] = PlayerPrefs.GetFloat("Third", 0);
         rankingBoard[1] = PlayerPrefs.GetFloat("Second", 0);
         rankingBoard[2] = PlayerPrefs.GetFloat("First", 0);
+
+        Physics.gravity = new Vector3(0, -forceGravity, 0);
     }
 
     public void addItemScore(float added)
