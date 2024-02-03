@@ -10,6 +10,9 @@ public class Item : MonoBehaviour
     private float max = 0.3f;
     private float speed = 2f;
     private float x = 0;
+
+
+
     void Start()
     {
         itemRigidbody = GetComponent<Rigidbody>();
